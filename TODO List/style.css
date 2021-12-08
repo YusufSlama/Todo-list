@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-attachment: fixed;
+}
+.nav-bar {
+  background-color: rgba(16, 41, 78, 0.5);
+  height: 5rem;
+  width: 85%;
+  margin-top: auto;
+  padding: 1.5rem;
+  margin: auto;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+#site-search {
+  width: 70%;
+  align-items: center;
+  margin: 0.5rem;
+  border: rgb(2, 104, 94);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.search-bar,
+.search-btn {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.search-btn {
+  border: none;
+
+  color: whitesmoke;
+  background-color: rgb(35, 47, 99);
+  cursor: pointer;
+}
+main {
+  background-image: linear-gradient(
+    120deg,
+    rgb(179, 179, 226),
+    rgb(8, 56, 100)
+  );
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.glass {
+  margin: auto;
+  margin-top: 2rem;
+  height: 80vh;
+  width: 85%;
+  background: linear-gradient(
+    120,
+    rgba(179, 179, 226, 0.7),
+    rgb(8, 56, 100, 0.3)
+  );
+  border-radius: 0.5rem;
+
+  z-index: 3;
+}
+
+.container-box {
+  width: 85%;
+  height: 80%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  position: absolute;
+}
+
+.container-box:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(10px);
+  margin: -20px;
+}
+.inside-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: whitesmoke;
+  height: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.todo-input {
+  padding: 0.6rem;
+  width: 20rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+.todo-button {
+  position: relative;
+  top: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+.fa-plus-square {
+  padding: 0.2rem;
+  background-color: white;
+  border: none;
+  margin: ;
+}
+
+.filter-todo {
+  padding: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  border-radius: 0.3rem;
+}
